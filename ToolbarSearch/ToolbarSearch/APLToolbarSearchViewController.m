@@ -153,7 +153,7 @@
     // Conduct the search. In this case, simply report the search term used.
     [self.recentSearchesPopoverController dismissPopoverAnimated:YES];
     self.recentSearchesPopoverController = nil;
-    NSString *formatString = NSLocalizedString(@"Performed a search using \"%@\".", @"format string for reporting search performed");
+    NSString *formatString = NSLocalizedString(@"Did a search using \"%@\".", @"format string for reporting search performed");
     self.progressLabel.text = [NSString stringWithFormat:formatString, searchString];
     [self.searchBar resignFirstResponder];
 }
